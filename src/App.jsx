@@ -1,9 +1,16 @@
 import React from 'react'
+import { Navbar } from './component/Navbar'
+import { DashboardHeader } from './component/DashboardHeader'
+import { AddPlaceForm } from './component/AddPlaceForm'
+import Footer from './component/Footer'
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-blue-300">
-      Hello world!
-    </h1>
+    <div>
+      <DashboardHeader/>
+      <Navbar/>
+      <AddPlaceForm />
+      {/* <Footer/> */}
+    </div>
   )
 }
